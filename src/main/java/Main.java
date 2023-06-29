@@ -1,26 +1,28 @@
 /**
  * Created by iyasuwatts on 10/17/17.
  */
+
+import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args){
         
         int number = getInputNumber();
-        
-        int sum = sumOfNumbers(number);
-        
+
+        var sum = sumOfNumbers(number);
+
         System.out.println(sum);
 
     }
     
     // do this one and the lab is complete. really.
     // return the sum of 0 to n... if n == 3, the result should be 6
-    int sumOfNumbers(int n) {
-        return 0;
+    static int sumOfNumbers(int n) {
+        return n * (n + 1)/2 ;
     }
     
     
-    int getInputNumber() {
+    static int getInputNumber() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter any number: ");
 
